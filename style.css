@@ -1,5 +1,6 @@
 .whole {
 	background-color: rgba(15, 14, 14, 1);
+	overflow: hidden;
 }
 
 .main {
@@ -19,7 +20,7 @@
 	width: 30%;
 	height: 50%;
 	top: 70px;
-	transition: transform 1s ease-in;
+
 }
 
 .ship {
@@ -110,3 +111,33 @@
 	width: 25px;
 	height: 10px;
 }
+
+@keyframes moons {
+	0%   {right: -9%;
+		opacity: 0;}
+  100% {right: 0%;}
+  }
+@keyframes ships {
+	0%   {bottom: -5%;
+		opacity: 0;}
+  100% {top: 0%;}
+  }
+.moon:focus {
+	-webkit-animation: moons 3s ease-in-out backwards;
+			animation: moons 3s ease-in-out backwards;
+  }
+  .moon:active {
+	-webkit-animation: none;
+			animation: none;
+  }
+  
+  .ship:focus {
+	-webkit-animation: ships 3s ease-in-out backwards;
+			animation: ships 3s ease-in-out backwards;
+  }
+  .ship:active {
+	-webkit-animation: none;
+			animation: none;
+  }
+  
+
