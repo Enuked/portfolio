@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Oswald&display=swap" rel="stylesheet">
     <title>Document</title>
+    <script>
+      
+      
+      $('#nxt').onClick(function(){
+    $('#moon').addClass('.moon');
+});
+  
+      </script>
   </head>
   <body class="whole">
     <div class="main">
       <div class="title-text">MOON</div>
-      <img class="ship" src="ship.png" alt="Italian Trulli">
-      <img class="moon" src="Moon2.png" alt="Italian Trulli">
+      <img tabindex="0" id ="ship" class="ship" src="ship.png" alt="Italian Trulli">
+      <img tabindex="0" id ="moon" class="moon" src="Moon2.png" alt="Italian Trulli">
     </div>
     <div class="subflex">
       <div class="sub-text">Earth's only natural satellite and the fifth largest <br>moon in the solar system. </div>
@@ -24,7 +32,7 @@
         <div class="dot4"></div>
       </div>
       <!-- Button for next page -->
-      <div class="next"></div>
+      <div id="nxt" class="next"></div>
       <div class="sub-text">Gravity: 1.62 m/s²</div>
       <div class="sub-text">Age: 4.53 billion years</div>
       <div class="sub-text">Orbital period: 27 days</div>
