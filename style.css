@@ -20,7 +20,6 @@
 	width: 30%;
 	height: 50%;
 	top: 70px;
-
 }
 
 .ship {
@@ -39,8 +38,8 @@
 	position: relative;
 	min-width: 10%;
 	font-size: 135px;
-	font-family: 'Oswald', sans-serif;
-	color: #BEBDBD;
+	font-family: "Oswald", sans-serif;
+	color: #bebdbd;
 }
 
 .subflex {
@@ -62,10 +61,23 @@
 	min-width: 10px;
 	flex-direction: row;
 	font-size: 18px;
-	font-family: 'Oswald';
-	color: #BEBDBD;
+	font-family: "Oswald";
+	color: #bebdbd;
 }
 
+.newmoon {
+	background-color: aquamarine;
+}
+
+.newship {
+	opacity: 0;
+}
+
+.nxtJS {
+	cursor: pointer;
+}
+
+.nxtJS,
 .next {
 	width: 50px;
 	height: 0px;
@@ -73,6 +85,15 @@
 	border-top: 20px solid transparent;
 	border-left: 40px solid rgba(146, 143, 143, 1);
 	border-bottom: 20px solid transparent;
+	border-radius: 10px;
+}
+
+.boom {
+	width: 50px;
+	height: 0px;
+	margin-bottom: 10px;
+	border-top: 20px solid transparent;
+	border-left: 40px solid rgba(146, 143, 143, 1);
 	border-radius: 10px;
 }
 
@@ -112,7 +133,7 @@
 	height: 10px;
 }
 
-@keyframes moons {
+/* @keyframes moons {
 	0%   {right: -9%;
 		opacity: 0;}
   100% {right: 0%;}
@@ -139,5 +160,4 @@
 	-webkit-animation: none;
 			animation: none;
   }
-  
-
+   */
